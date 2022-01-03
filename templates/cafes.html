@@ -12,7 +12,6 @@
       <h1>All Cafes</h1>
 
 	  <table class="table">
-          {% for row in cafes %}
           <tr>
               <td>Cafe Name</td>
               <td>Location</td>
@@ -22,6 +21,8 @@
               <td>Wifi</td>
               <td>Power</td>
           </tr>
+          {% for row in cafes %}
+
           <tr>
               {% for item in row%}
               <td>
